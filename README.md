@@ -1,9 +1,9 @@
 # sharelatex-full (Overleaf)
 
-[![GitHub license](https://img.shields.io/github/license/Tuetenk0pp/sharelatex-full)](https://github.com/Tuetenk0pp/sharelatex-full/blob/master/LICENSE)
-[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/Tuetenk0pp/sharelatex-full/build-test.yml)](https://github.com/Tuetenk0pp/sharelatex-full/actions/workflows/build-test.yml)
-[![GitHub issues](https://img.shields.io/github/issues/tuetenk0pp/sharelatex-full)](https://github.com/Tuetenk0pp/sharelatex-full/issues)
-[![Docker Pulls](https://img.shields.io/docker/pulls/tuetenk0pp/sharelatex-full)](https://hub.docker.com/r/tuetenk0pp/sharelatex-full)
+[![GitHub license](https://img.shields.io/github/license/lllvcs/sharelatex-full)](https://github.com/lllvcs/sharelatex-full/blob/master/LICENSE)
+[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/lllvcs/sharelatex-full/build-test.yml)](https://github.com/lllvcs/sharelatex-full/actions/workflows/build-test.yml)
+[![GitHub issues](https://img.shields.io/github/issues/lllvcs/sharelatex-full)](https://github.com/lllvcs/sharelatex-full/issues)
+[![Docker Pulls](https://img.shields.io/docker/pulls/lvcs/sharelatex-full)](https://hub.docker.com/r/lvcs/sharelatex-full)
 
 Extended Overleaf Docker Image.
 Current Features include:
@@ -13,6 +13,7 @@ Current Features include:
 - support for `svg`-images through the addition of inkscape
 - support for lilipond
 - shell-escape enabled by default
+- Additional fonts: `texlive-fonts-recommended`, `texlive-fonts-extra`, `fonts-noto`, `fonts-dejavu` and other Chinese fonts.
 
 Have a look at the [Dockerfile](./Dockerfile) to find out more.
 
@@ -29,7 +30,7 @@ Example:
 ``` yml
 services:
     sharelatex:
-        image: tuetenk0pp/sharelatex-full
+        image: lvcs/sharelatex-full
 ```
 
 ### Docker Compose
@@ -37,5 +38,5 @@ services:
 > [!WARNING]
 > This method is not recommended. Use the Overleaf Toolkit instead.
 
-Use the [docker-compose.yml](https://github.com/overleaf/overleaf/blob/main/docker-compose.yml) provided in the [official GitHub](https://github.com/overleaf/overleaf), but change the image to ``tuetenk0pp/sharelatex-full``.
+Use the [docker-compose.yml](https://github.com/overleaf/overleaf/blob/main/docker-compose.yml) provided in the [official GitHub](https://github.com/overleaf/overleaf), but change the image to ``lvcs/sharelatex-full``.
 Also, note the additional instructions in the [official Wiki](https://github.com/overleaf/overleaf/wiki/Release-Notes--4.x.x#manually-setting-up-mongodb-as-a-replica-set).
